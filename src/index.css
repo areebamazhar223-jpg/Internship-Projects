@@ -1,0 +1,67 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Inter", "Segoe UI", Arial, sans-serif;
+    background-color: #f5f8f6;
+    color: #26352e;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button,
+input,
+select,
+textarea {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Global Light Theme */
+:root {
+    --app-bg: #f5f8f6;
+    --surface-bg: #ffffff;
+    --text-primary: #26352e;
+    --text-secondary: #718078;
+    --border-color: #e3ebe6;
+    --primary-color: #075b46;
+}
+
+/* Global Dark Theme */
+.dark-theme {
+    --app-bg: #121c18;
+    --surface-bg: #1c2923;
+    --text-primary: #edf5ef;
+    --text-secondary: #a6b5ab;
+    --border-color: #34463c;
+    --primary-color: #36a47d;
+}
+
+body,
+#root {
+    min-height: 100vh;
+}
+
+.dark-theme body {
+    background-color: var(--app-bg);
+    color: var(--text-primary);
+}

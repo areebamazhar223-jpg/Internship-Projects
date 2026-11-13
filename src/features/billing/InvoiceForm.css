@@ -1,0 +1,120 @@
+.invoice-form {
+    width: 100%;
+    padding: 4px 2px;
+    color: var(--text-primary, #202923);
+}
+
+.invoice-form-error {
+    padding: 12px 14px;
+    margin-bottom: 18px;
+    border: 1px solid #f2b8b5;
+    border-radius: 8px;
+    background: #fff1f0;
+    color: #b42318;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.invoice-form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.invoice-form-group {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    gap: 8px;
+}
+
+.invoice-form-group.full-width {
+    grid-column: 1 / -1;
+}
+
+.invoice-form-group label {
+    color: var(--text-primary, #26332b);
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.invoice-form-group input,
+.invoice-form-group select,
+.invoice-form-group textarea {
+    width: 100%;
+    min-width: 0;
+    padding: 11px 13px;
+    border: 1px solid var(--border-color, #dce3dd);
+    border-radius: 8px;
+    outline: none;
+    background: var(--card-bg, #ffffff);
+    color: var(--text-primary, #26332b);
+    font-family: inherit;
+    font-size: 14px;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.invoice-form-group input,
+.invoice-form-group select {
+    min-height: 43px;
+}
+
+.invoice-form-group textarea {
+    min-height: 90px;
+    resize: vertical;
+    line-height: 1.5;
+}
+
+.invoice-form-group input::placeholder,
+.invoice-form-group textarea::placeholder {
+    color: #7a857e;
+}
+
+.invoice-form-group input:focus,
+.invoice-form-group select:focus,
+.invoice-form-group textarea:focus {
+    border-color: #16845b;
+    box-shadow: 0 0 0 3px rgba(22, 132, 91, 0.12);
+}
+
+.invoice-form-group input:hover,
+.invoice-form-group select:hover,
+.invoice-form-group textarea:hover {
+    border-color: #aab9af;
+}
+
+.invoice-form-actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 12px;
+    margin-top: 26px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border-color, #e5e9e6);
+}
+
+/* Mobile responsive */
+@media (max-width: 600px) {
+    .invoice-form {
+        padding: 0;
+    }
+
+    .invoice-form-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .invoice-form-group.full-width {
+        grid-column: auto;
+    }
+
+    .invoice-form-actions {
+        flex-direction: column-reverse;
+        align-items: stretch;
+    }
+
+    .invoice-form-actions button {
+        width: 100%;
+        justify-content: center;
+    }
+}

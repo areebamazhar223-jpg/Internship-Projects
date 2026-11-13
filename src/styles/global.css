@@ -1,0 +1,236 @@
+/* ==============================
+   GLOBAL RESET
+============================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: var(--font-primary, "Inter"), "Segoe UI", Arial, sans-serif;
+  background: var(--bg-body, #f5f8f6);
+  color: var(--text-primary, #263d31);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease;
+}
+
+#root {
+  min-height: 100vh;
+  background: var(--bg-body, #f5f8f6);
+  color: var(--text-primary, #263d31);
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease;
+}
+
+/* ==============================
+   HEADINGS
+============================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--text-primary, #183c2d);
+  line-height: 1.3;
+  font-weight: 650;
+  transition: color 0.25s ease;
+}
+
+p {
+  line-height: 1.6;
+}
+
+/* ==============================
+   LINKS
+============================== */
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:focus-visible {
+  outline: 2px solid var(--primary, #08764f);
+  outline-offset: 3px;
+}
+
+/* ==============================
+   BUTTONS
+============================== */
+
+button {
+  font-family: inherit;
+  color: inherit;
+}
+
+button:focus-visible {
+  outline: 2px solid var(--primary, #08764f);
+  outline-offset: 3px;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+/* ==============================
+   INPUTS
+============================== */
+
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  color: var(--text-primary, #263d31);
+}
+
+input,
+select,
+textarea,
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--text-muted, #606f66);
+}
+
+/* ==============================
+   IMAGES
+============================== */
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* ==============================
+   LISTS
+============================== */
+
+ul,
+ol {
+  list-style: none;
+}
+
+/* ==============================
+   SCROLLBAR
+============================== */
+
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-body, #f1f5f2);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-color, #cbd9d0);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary, #08764f);
+}
+
+/* ==============================
+   SELECTION
+============================== */
+
+::selection {
+  background: var(--primary-light, #d9eee3);
+  color: var(--primary, #075b46);
+}
+
+/* ==============================
+   COMMON UTILITIES
+============================== */
+
+.text-primary {
+  color: var(--primary, #08764f);
+}
+
+.text-muted {
+  color: var(--text-muted, #89958e);
+}
+
+.text-danger {
+  color: var(--danger, #df5555);
+}
+
+.bg-white {
+  background: var(--bg-white, #ffffff);
+}
+
+.w-full {
+  width: 100%;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* ==============================
+   GLOBAL THEME TRANSITIONS
+============================== */
+
+body,
+#root,
+.main-page-content,
+.main-content,
+.dashboard-container,
+.stat-card,
+.chart-card,
+.table-wrapper,
+.modal-content,
+.form-container {
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+/* ==============================
+   ACCESSIBILITY
+============================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}

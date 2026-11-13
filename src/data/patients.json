@@ -1,0 +1,67 @@
+[
+  {
+    "id": 1,
+    "patientId": "PAT-1001",
+    "name": "Ahmed Khan",
+    "age": 32,
+    "gender": "Male",
+    "phone": "0300-XXX1001",
+    "email": "ahmed@example.com",
+    "bloodGroup": "A+",
+    "condition": "Fever",
+    "status": "Active",
+    "lastVisit": "2026-11-05"
+  },
+  {
+    "id": 2,
+    "patientId": "PAT-1002",
+    "name": "Sara Ali",
+    "age": 27,
+    "gender": "Female",
+    "phone": "0300-XXX1002",
+    "email": "sara@example.com",
+    "bloodGroup": "B+",
+    "condition": "Migraine",
+    "status": "Active",
+    "lastVisit": "2026-11-04"
+  },
+  {
+    "id": 3,
+    "patientId": "PAT-1003",
+    "name": "Usman Malik",
+    "age": 45,
+    "gender": "Male",
+    "phone": "0300-XXX1003",
+    "email": "usman@example.com",
+    "bloodGroup": "O+",
+    "condition": "Diabetes",
+    "status": "Inactive",
+    "lastVisit": "2026-10-28"
+  },
+  {
+    "id": 4,
+    "patientId": "PAT-1004",
+    "name": "Ayesha Noor",
+    "age": 36,
+    "gender": "Female",
+    "phone": "0300-XXX1004",
+    "email": "ayesha@example.com",
+    "bloodGroup": "AB+",
+    "condition": "Blood Pressure",
+    "status": "Active",
+    "lastVisit": "2026-11-06"
+  },
+  {
+    "id": 5,
+    "patientId": "PAT-1005",
+    "name": "Bilal Ahmed",
+    "age": 51,
+    "gender": "Male",
+    "phone": "0300-XXX1005",
+    "email": "bilal@example.com",
+    "bloodGroup": "O-",
+    "condition": "Heart Checkup",
+    "status": "Active",
+    "lastVisit": "2026-11-02"
+  }
+]

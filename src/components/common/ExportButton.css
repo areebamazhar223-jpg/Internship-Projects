@@ -1,0 +1,49 @@
+.export-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 16px;
+    min-height: 40px;
+    border: 1px solid #d1e5dc;
+    border-radius: 8px;
+    background: #ffffff;
+    color: #075b46;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: inherit;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+}
+
+.export-button:hover:not(:disabled) {
+    background: #075b46;
+    border-color: #075b46;
+    color: #ffffff;
+}
+
+.export-button:active:not(:disabled) {
+    transform: scale(0.97);
+}
+
+.export-button:focus-visible {
+    outline: 3px solid rgba(7, 91, 70, 0.2);
+    outline-offset: 2px;
+}
+
+.export-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.export-button svg {
+    flex-shrink: 0;
+}
+
+@media (max-width: 576px) {
+    .export-button {
+        padding: 9px 12px;
+        font-size: 13px;
+    }
+}

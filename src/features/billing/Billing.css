@@ -1,0 +1,77 @@
+/* Billing Row Actions */
+.billing-row-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: nowrap;
+}
+
+/* Edit Button */
+.billing-edit-btn {
+  width: 34px;
+  height: 34px;
+  min-width: 34px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #dce5df;
+  border-radius: 7px;
+  background: #ffffff;
+  color: #16845b;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  padding: 0;
+}
+
+.billing-edit-btn:hover {
+  background: #eaf6ef;
+  border-color: #16845b;
+  color: #116b47;
+}
+
+.billing-edit-btn:focus-visible,
+.billing-view-btn:focus-visible {
+  outline: 3px solid rgba(22, 132, 91, 0.25);
+  outline-offset: 2px;
+}
+
+/* Billing Status Filter */
+.billing-status-filter {
+  min-height: 40px;
+  min-width: 140px;
+  padding: 8px 12px;
+  border: 1px solid #dce5df;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #26332b;
+  font-size: 13px;
+  font-family: inherit;
+  cursor: pointer;
+  outline: none;
+  box-sizing: border-box;
+  transition: all 0.2s ease;
+}
+
+.billing-status-filter:focus {
+  border-color: #16845b;
+  box-shadow: 0 0 0 3px rgba(22, 132, 91, 0.12);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .billing-status-filter {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .billing-row-actions {
+    gap: 6px;
+  }
+
+  .billing-edit-btn {
+    width: 32px;
+    height: 32px;
+    min-width: 32px;
+  }
+}
