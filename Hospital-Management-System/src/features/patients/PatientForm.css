@@ -1,0 +1,88 @@
+.patient-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.patient-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.patient-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.patient-form-group.full-width {
+  grid-column: 1 / -1;
+}
+
+.patient-form-group label {
+  color: #34483f;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.patient-form-group input,
+.patient-form-group select,
+.patient-form-group textarea {
+  width: 100%;
+  padding: 11px 12px;
+  border: 1px solid #dce7e1;
+  border-radius: 8px;
+  outline: none;
+  background: #ffffff;
+  color: #263b33;
+  font-size: 13px;
+  font-family: inherit;
+  transition: 0.2s ease;
+}
+
+.patient-form-group input:focus,
+.patient-form-group select:focus,
+.patient-form-group textarea:focus {
+  border-color: #16845b;
+  box-shadow: 0 0 0 3px rgba(22, 132, 91, 0.1);
+}
+
+.patient-form-group textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+
+.patient-form-error {
+  padding: 10px 12px;
+  background: #fff0f0;
+  color: #c62828;
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+.patient-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  padding-top: 15px;
+  border-top: 1px solid #edf1ee;
+}
+
+@media (max-width: 600px) {
+  .patient-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .patient-form-group.full-width {
+    grid-column: auto;
+  }
+
+  .patient-form-actions {
+    flex-direction: column-reverse;
+  }
+
+  .patient-form-actions button {
+    width: 100%;
+  }
+}

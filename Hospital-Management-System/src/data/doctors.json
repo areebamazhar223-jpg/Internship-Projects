@@ -1,0 +1,46 @@
+[
+  {
+    "id": 1,
+    "doctorId": "DOC-101",
+    "name": "Dr. Ali Hassan",
+    "specialization": "Cardiologist",
+    "email": "ali@example.com",
+    "phone": "0300-XXX2001",
+    "experience": 12,
+    "availability": "Available",
+    "status": "Active"
+  },
+  {
+    "id": 2,
+    "doctorId": "DOC-102",
+    "name": "Dr. Fatima Noor",
+    "specialization": "Dermatologist",
+    "email": "fatima@example.com",
+    "phone": "0300-XXX2002",
+    "experience": 8,
+    "availability": "Available",
+    "status": "Active"
+  },
+  {
+    "id": 3,
+    "doctorId": "DOC-103",
+    "name": "Dr. Usman Raza",
+    "specialization": "Neurologist",
+    "email": "usman.doctor@example.com",
+    "phone": "0300-XXX2003",
+    "experience": 10,
+    "availability": "On Leave",
+    "status": "Active"
+  },
+  {
+    "id": 4,
+    "doctorId": "DOC-104",
+    "name": "Dr. Sara Ahmed",
+    "specialization": "Pediatrician",
+    "email": "sara.doctor@example.com",
+    "phone": "0300-XXX2004",
+    "experience": 6,
+    "availability": "Available",
+    "status": "Active"
+  }
+]

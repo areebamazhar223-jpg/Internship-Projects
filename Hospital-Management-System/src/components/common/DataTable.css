@@ -1,0 +1,117 @@
+/* Table Wrapper */
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  background: #ffffff;
+  border: 1px solid #e9efeb;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(20, 50, 35, 0.035);
+}
+
+/* Custom Table */
+.custom-data-table {
+  width: 100%;
+  min-width: 650px;
+  border-collapse: separate;
+  border-spacing: 0;
+  text-align: left;
+}
+
+/* Table Header */
+.custom-data-table thead {
+  background: #f4f8f5;
+}
+
+.custom-data-table th {
+  padding: 16px 18px;
+  color: #52645a;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  white-space: nowrap;
+  border-bottom: 1px solid #e9efeb;
+}
+
+/* Table Body */
+.custom-data-table td {
+  padding: 15px 18px;
+  color: #53645a;
+  font-size: 13px;
+  font-weight: 450;
+  border-bottom: 1px solid #f0f3f1;
+  white-space: nowrap;
+}
+
+/* Last Row */
+.custom-data-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Row Hover */
+.custom-data-table tbody tr {
+  transition: background 0.2s ease;
+}
+
+.custom-data-table tbody tr:hover {
+  background: #f8fbf9;
+}
+
+/* Clickable Row */
+.custom-data-table tbody tr.clickable-row {
+  cursor: pointer;
+}
+
+.custom-data-table tbody tr.clickable-row:hover {
+  background: #edf7f1;
+}
+
+/* Empty Message */
+.custom-data-table .table-empty {
+  height: 130px;
+  text-align: center;
+  vertical-align: middle;
+  color: var(--text-muted);
+  font-size: 13px;
+}
+
+/* Scrollbar */
+.table-wrapper::-webkit-scrollbar {
+  height: 6px;
+}
+
+.table-wrapper::-webkit-scrollbar-track {
+  background: #f4f7f5;
+  border-radius: 10px;
+}
+
+.table-wrapper::-webkit-scrollbar-thumb {
+  background: #cbd9d0;
+  border-radius: 10px;
+}
+
+.table-wrapper::-webkit-scrollbar-thumb:hover {
+  background: #08764f;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .custom-data-table th {
+    padding: 14px;
+    font-size: 11px;
+  }
+
+  .custom-data-table td {
+    padding: 13px 14px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .table-wrapper {
+    border-radius: 9px;
+  }
+
+  .custom-data-table {
+    min-width: 580px;
+  }
+}

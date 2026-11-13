@@ -1,0 +1,156 @@
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: rgba(15, 30, 23, 0.5);
+  backdrop-filter: blur(3px);
+  animation: modalFadeIn 0.2s ease;
+}
+
+/* Modal Box */
+.custom-modal {
+  width: 100%;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  border: 1px solid #edf1ee;
+  border-radius: 14px;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.16);
+  overflow: hidden;
+  animation: modalSlideIn 0.25s ease;
+}
+
+/* Modal Sizes */
+.modal-small {
+  max-width: 400px;
+}
+
+.modal-medium {
+  max-width: 600px;
+}
+
+.modal-large {
+  max-width: 850px;
+}
+
+/* Modal Header */
+.modal-header {
+  min-height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 16px 22px;
+  border-bottom: 1px solid #edf1ee;
+  background: #ffffff;
+}
+
+.modal-header h2 {
+  margin: 0;
+  color: #183c2d;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* Close Button */
+.modal-close {
+  width: 34px;
+  height: 34px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 8px;
+  background: #f3f7f4;
+  color: #68766e;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.modal-close:hover {
+  background: #ffeded;
+  color: #d35454;
+}
+
+/* Modal Body */
+.modal-body {
+  padding: 22px;
+  overflow-y: auto;
+  color: #53645a;
+  font-size: 14px;
+}
+
+/* Scrollbar */
+.modal-body::-webkit-scrollbar {
+  width: 5px;
+}
+
+.modal-body::-webkit-scrollbar-thumb {
+  background: #d8e3dc;
+  border-radius: 10px;
+}
+
+/* Animations */
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes modalSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px) scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .modal-overlay {
+    padding: 12px;
+  }
+
+  .custom-modal {
+    max-height: 92vh;
+    border-radius: 12px;
+  }
+
+  .modal-header {
+    min-height: 58px;
+    padding: 13px 16px;
+  }
+
+  .modal-header h3 {
+    font-size: 16px;
+  }
+
+  .modal-body {
+    padding: 17px;
+  }
+}
+
+@media (max-width: 350px) {
+  .modal-overlay {
+    padding: 8px;
+  }
+
+  .modal-body {
+    padding: 13px;
+  }
+}

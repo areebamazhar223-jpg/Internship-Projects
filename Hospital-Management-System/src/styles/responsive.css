@@ -1,0 +1,135 @@
+/* ==============================
+   LARGE DESKTOP
+============================== */
+
+@media (min-width: 1440px) {
+  .main-page-content {
+    padding: 32px;
+  }
+
+  .dashboard-charts {
+    gap: 25px;
+  }
+}
+
+/* ==============================
+   LAPTOP
+============================== */
+
+@media (max-width: 1200px) {
+  .main-page-content {
+    padding: 22px;
+  }
+
+  .dashboard-charts {
+    gap: 18px;
+  }
+}
+
+/* ==============================
+   TABLET
+============================== */
+
+@media (max-width: 900px) {
+  .main-page-content {
+    padding: 20px;
+  }
+
+  .dashboard-charts {
+    grid-template-columns: 1fr;
+  }
+
+  .stat-card {
+    padding: 17px;
+  }
+
+  .table-wrapper {
+    max-width: 100%;
+    overflow-x: auto;
+  }
+}
+
+/* ==============================
+   MOBILE
+============================== */
+
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+
+  .main-page-content {
+    padding: 15px;
+  }
+
+  .dashboard-charts {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .chart-card {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .stat-card {
+    width: 100%;
+  }
+
+  .custom-search {
+    max-width: 100%;
+  }
+
+  .pagination-container {
+    justify-content: center;
+  }
+
+  .modal-overlay {
+    padding: 12px;
+  }
+}
+
+/* ==============================
+   SMALL MOBILE
+============================== */
+
+@media (max-width: 400px) {
+  .main-page-content {
+    padding: 12px;
+  }
+
+  .chart-card {
+    padding: 12px;
+  }
+
+  .stat-card {
+    padding: 14px;
+  }
+
+  .not-found-card {
+    padding: 25px 15px;
+  }
+}
+
+/* ==============================
+   EXTRA SMALL DEVICES
+============================== */
+
+@media (max-width: 350px) {
+  .main-page-content {
+    padding: 10px;
+  }
+
+  .chart-header {
+    flex-wrap: wrap;
+  }
+
+  .not-found-actions {
+    flex-direction: column;
+  }
+
+  .not-found-back,
+  .not-found-home {
+    width: 100%;
+  }
+}

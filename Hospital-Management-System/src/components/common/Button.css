@@ -1,0 +1,130 @@
+/* Base Button */
+.custom-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  border: 1px solid transparent;
+  border-radius: 9px;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.custom-btn:focus-visible {
+  outline: 2px solid #08764f;
+  outline-offset: 3px;
+}
+
+/* Button Sizes */
+.btn-small {
+  min-height: 34px;
+  padding: 7px 12px;
+  font-size: 12px;
+}
+
+.btn-medium {
+  min-height: 42px;
+  padding: 10px 17px;
+}
+
+.btn-large {
+  min-height: 48px;
+  padding: 12px 22px;
+  font-size: 14px;
+}
+
+/* Primary */
+.btn-primary {
+  background: #08764f;
+  color: #ffffff;
+  border-color: #08764f;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background: #065c3e;
+  border-color: #065c3e;
+  box-shadow: 0 4px 10px rgba(8, 118, 79, 0.16);
+}
+
+/* Secondary */
+.btn-secondary {
+  background: #e8f5ef;
+  color: #08764f;
+  border-color: #e8f5ef;
+}
+
+.btn-secondary:hover:not(:disabled) {
+  background: #d9eee3;
+  border-color: #d9eee3;
+}
+
+/* Outline */
+.btn-outline {
+  background: #ffffff;
+  color: #08764f;
+  border-color: #cbded3;
+}
+
+.btn-outline:hover:not(:disabled) {
+  background: #f0f8f4;
+  border-color: #08764f;
+}
+
+/* Danger */
+.btn-danger {
+  background: #df5555;
+  color: #ffffff;
+  border-color: #df5555;
+}
+
+.btn-danger:hover:not(:disabled) {
+  background: #c94040;
+  border-color: #c94040;
+}
+
+/* Ghost */
+.btn-ghost {
+  background: transparent;
+  color: #64736b;
+  border-color: transparent;
+}
+
+.btn-ghost:hover:not(:disabled) {
+  background: #f0f5f2;
+  color: #08764f;
+}
+
+/* Disabled */
+.custom-btn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* Loading Animation */
+.btn-loader {
+  flex-shrink: 0;
+  animation: buttonSpin 0.8s linear infinite;
+}
+
+@keyframes buttonSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .btn-large {
+    min-height: 44px;
+    padding: 10px 16px;
+  }
+
+  .custom-btn {
+    font-size: 12px;
+  }
+}
