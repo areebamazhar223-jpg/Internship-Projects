@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 
-const API_URL = 'http://127.0.0.1:8000/predict'
+const API_URL = `${import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000'}/predict`
 
 function App() {
   const [emailInput, setEmailInput] = useState('')
@@ -40,7 +40,7 @@ function App() {
       setError(
         err instanceof Error
           ? err.message
-          : 'Unable to connect to the backend. Is the API running at http://127.0.0.1:8000?'
+          : 'Unable to connect to the backend. Please make sure the API server is running.'
       )
     } finally {
       setLoading(false)
